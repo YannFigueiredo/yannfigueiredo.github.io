@@ -1,19 +1,116 @@
 <!DOCTYPE html>
-<html lang=pt-br>
-  <head>
-    <meta charset="utf-8" />
-    <title>React App</title>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio pessoal de Yann Fabricio Cardoso de Figueiredo.">
+        <meta name="author" content="Yann Fabricio Cardoso de Figueiredo">
 
-		$(function(){
-		$('#main').load("/public/index.html");
-		});
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700&family=Saira:wght@400;500&display=swap" rel="stylesheet"> 
 
-	</script>
-  </head>
-  <body>
-  	<div id="main"></div>    
-  </body>
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/main.css"/>
+
+        <title>Yann Figueiredo - Portfólio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="main-header">
+            <nav class="main-header-menu">
+                <ul>
+                    <li>Sobre mim</li>
+                    <li>Conhecimento</li>
+                    <li>Projetos</li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introdução -->
+        <section id="intro">
+            <h1 class="intro-title">Yann Fabricio Cardoso de Figueiredo</h1>
+            <span class="intro-subtitle">Programador Full Stack | Programador Front-End</span>
+            <div class="intro-links">
+                <div class="link-linkedin">
+                    <img src="img/icons/linkedin.svg" alt="Logo do LinkedIn"/>
+                </div>
+                <div class="link-github">
+                    <img src="img/icons/github.svg" alt="Logo do Github"/>
+                </div>
+                <div class="link-resume">
+                    <img src="img/icons/file-pdf-solid.svg" alt="Logo de arquivo PDF"/>
+                </div>
+                <div class="link-email">
+                    <img src="img/icons/envelope-solid.svg" alt="Logo de email"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mim -->
+        <section class="about">
+            <div class="container-img about-img">
+                <img/>
+            </div>
+            <div class="about-text">
+                <h2 class="about-title">Sobre mim</h2>
+                <span class="about-description">
+                    Me chamo Yann Fabricio Cardoso de Figueiredo e estou sempre disposto a aprender mais.
+                    . Sou formado em ciência da computação, e foco no desenvolvimento web Full Stack, especialmente com os frameworks React.js e Springboot. Na universidade trabalhei bastante com a linguagem Python, inclusive em projetos mais práticos com a metodologia ágil SCRUM, onde também utilizei as principais tecnologias de desenvolvimento web (JavaScript, HTML 5 e CSS 3) junto com tecnologias complementares como banco de dados PostgreSQL, Django, Docker e versionamento com git. 
+                    <br/>
+                    Fazendo projetos pessoais passei a adotar o framework React.js como minha principal ferramenta de desenvolvimento front-end de websites e o Springboot para desenvolvimento back-end. Nos meus projetos utilizei diversas tecnologias e bibliotecas para gerar um produto final mais satisfatório, como Styled Components, React Hooks, Context API, Axios, JPA/Hibernate, entre outras, 
+                    
+                </span>
+            </div>
+        </section>
+
+        <!-- Conhecimento -->
+        <section class="skills">
+            <h2 class="skills-title">Conhecimento</h2>
+            <div class="skills-icons">
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Java-Dark.svg" title="Java" alt="Java"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Python-Dark.svg" title="Python" alt="Python"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/HTML.svg" title="HTML" alt="HTML"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/CSS.svg" title="CSS" alt="CSS"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/JavaScript.svg" title="JavaScript" alt="JavaScript"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/TypeScript.svg" title="TypeScript" alt="TypeScript"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Django.svg" title="Django" alt="Django"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg" title="React" alt="React"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Spring-Dark.svg" title="Spring Boot" alt="Spring Boot"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/MySQL-Dark.svg" title="MySQL" alt="MySQL"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/PostgreSQL-Dark.svg" title="PostgreSQL" alt="PostgreSQL"/>
+                <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg" title="Git" alt="Git"/>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="projects">
+            <article class="project">
+                <div class="project-primary-screen">
+                    <div class="container-img project-thumb">
+                        <img/>
+                    </div>
+                    <div>
+                        <div>
+                            <h3 class="project-title"></h3>
+                            <div class="project-info"><img src="img/icons/circle-info-solid.svg" alt="Mais informações"/></div>
+                        </div>
+                        <p></p>
+                    </div>
+                    <div class="project-links">
+                        <a href=""><img src="img/icons/github.svg" alt="Código no Github"/></a>
+                        <a href=""><img src="img/icons/arrow-up-right-from-square-solid.svg" alt="Aplicação online"/></a>
+                    </div>
+                </div>
+                <div class="project-secondary-screen">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </body>
 </html>
