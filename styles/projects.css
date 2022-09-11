@@ -9,7 +9,7 @@
 
 .project-card{
     width: 400px;
-    border: 2px solid rgb(118, 29, 122); 
+    border: 6px solid rgb(118, 29, 122); 
     background: white;
     border-radius: 8px;
     overflow: hidden;
@@ -37,18 +37,30 @@
 }
 
 .project-links-infos{
-    width: 35px;
+    width: 30px;
     cursor: pointer;
 }
 
-.project-links a{
+.project-links-infos svg{
+    transition: all linear .3s;
+}
+
+.project-links-infos:hover svg{
+    fill: rgb(118, 29, 122); 
+}
+
+.project-links-app a{
     display: inline-block;
-    width: 35px;
+    width: 30px;
     margin-right: 8px;
 }
 
-.project-card .container-img:hover ~ .project-secondary-screen{
-    transform: translateY(0%);
+.project-links-app a svg{
+    transition: all linear .3s;
+}
+
+.project-links-app a:hover svg{
+    fill: rgb(118, 29, 122); 
 }
 
 .project-secondary-screen{
@@ -64,5 +76,22 @@
     transition: all linear .3s;
     overflow: hidden;
     transform: translateY(-100%);
+}
+
+.project-secondary-screen .btn-close{
+    width: 30px;
+    fill: rgba(255, 255, 255, .4);
+    right: 0;
+    cursor: pointer;
+    transition: all linear .3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;;
+}
+
+.project-secondary-screen .btn-close:hover{
+    fill: rgba(255, 255, 255, 1); 
 }
 

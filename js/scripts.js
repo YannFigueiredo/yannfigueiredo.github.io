@@ -1,10 +1,11 @@
 function openProjectInfos() {
-    var btnInfos = document.querySelector(".project-links-infos");
     var secondaryScreen = document.querySelector(".project-secondary-screen");
 
-    btnInfos.addEventListener("click", () => {
-        secondaryScreen.style.transform = "translateY(0%)";
-    });
+    secondaryScreen.style.transform = "translateY(0%)";
 }
 
-openProjectInfos();
+function closeProjectInfos() {
+    var secondaryScreen = document.querySelector(".project-secondary-screen");
+
+    secondaryScreen.style.transform = "translateY(-100%)";
+}
