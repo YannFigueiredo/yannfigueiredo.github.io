@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="styles/intro.css"/>
         <link rel="stylesheet" href="styles/about.css"/>
         <link rel="stylesheet" href="styles/skills.css"/>
+        <link rel="stylesheet" href="styles/projects.css"/>
+        <link rel="stylesheet" href="styles/footer.css"/>
 
         <title>Yann Figueiredo - Portfólio</title>
     </head>
@@ -111,33 +113,42 @@
         </section>
 
         <!-- Projetos -->
-        <section class="projects">
-            <article class="project">
-                <div class="project-primary-screen">
-                    <div class="container-img project-thumb">
-                        <img/>
-                    </div>
-                    <div class="project-text">
-                        <div>
-                            <h3 class="project-title">Meta Vendas</h3>
-                            <div class="project-info"><img src="img/icons/circle-info-solid.svg" alt="Mais informações"/></div>
+        <section class="container" id="projects">
+            <h2 class="projects-title">Projetos</h2>
+            <div class="projects-cards">
+                <article class="project-card">
+                    <div class="project-primary-screen">
+                        <div class="container-img project-thumb">
+                            <img src="img/thumbs/meta-vendas.png" alt="Thumb do projeto meta vendas"/>
                         </div>
-                        <p>
-                            Aplicativo Web que lista as metas de vendas batidas por vendedores fictícios e ainda notifica-os, quando o usuário clica no botão de notifcar, sobre a meta diária atingida.
-                        </p>
+                        <div class="project-text">
+                            <h3 class="project-title">Meta Vendas</h3>
+                            <p class="project-description">
+                                Aplicativo Web que lista as metas de vendas batidas por vendedores fictícios e ainda notifica-os, quando o usuário clica no botão de notifcar, sobre a meta diária atingida.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <div class="project-links-infos">
+                                <img src="img/icons/circle-info-solid.svg" alt="Mais informações"/>
+                            </div>
+                            <div class="project-links-app">
+                                <a href="https://github.com/YannFigueiredo/meta-vendas" target="_blank"><img src="img/icons/github.svg" alt="Código no Github"/></a>
+                                <a href="https://metavendas.netlify.app/" target="_blank"><img src="img/icons/arrow-up-right-from-square-solid.svg" alt="Aplicação online"/></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/YannFigueiredo/meta-vendas" target="_blank"><img src="img/icons/github.svg" alt="Código no Github"/></a>
-                        <a href="https://metavendas.netlify.app/" target="_blank"><img src="img/icons/arrow-up-right-from-square-solid.svg" alt="Aplicação online"/></a>
+                    <div class="project-secondary-screen">
+                        <ul>
+                            <li><b>Tecnologias: </b>Java, Spring Boot, JPA, H2 Database, HTML, CSS, TypeScript, React, Styled components, Axios e Context API.</li>
+                            <li>A API possui apenas endpoints de GET, para obter todos os registros de vendas e para enviar notificação por SMS para um número usando Twilio.</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="project-secondary-screen">
-                    <ul>
-                        <li><b>Tecnologias: </b>Java, Spring Boot, JPA, H2 Database, HTML, CSS, TypeScript, React, Styled components, Axios e Context API.</li>
-                        <li>A API possui apenas endpoints de GET, para obter todos os registros de vendas e para enviar notificação por SMS para um número usando Twilio.</li>
-                    </ul>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
+
+        <!-- Footer -->
+        <footer class="container" id="main-footer"></footer>
     </body>
+    <script src="js/scripts.js"></script>
 </html>
