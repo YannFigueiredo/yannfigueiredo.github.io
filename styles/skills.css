@@ -1,0 +1,38 @@
+#skills{
+    margin-top: 50px;
+}
+
+.skills-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 8px;
+}
+
+.skill-card{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.skill-card-title{
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.skill-card-elements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.skill-card-elements img{
+    width: 65px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
