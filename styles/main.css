@@ -8,7 +8,7 @@
 }
 
 body{
-    background: rgb(8, 12, 19);
+    background: rgba(8, 12, 19, .9);
     max-width: 100%;
 }
 

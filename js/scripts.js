@@ -1,11 +1,15 @@
-function openProjectInfos() {
-    var secondaryScreen = document.querySelector(".project-secondary-screen");
+function openProjectInfos(id) {
+    var projects = document.querySelectorAll(".projects-cards .project-card");
+
+    var secondaryScreen = projects[id].querySelector(".project-secondary-screen");
 
     secondaryScreen.style.transform = "translateY(0%)";
 }
 
-function closeProjectInfos() {
-    var secondaryScreen = document.querySelector(".project-secondary-screen");
+function closeProjectInfos(id) {
+    var projects = document.querySelectorAll(".projects-cards .project-card");
+
+    var secondaryScreen = projects[id].querySelector(".project-secondary-screen");
 
     secondaryScreen.style.transform = "translateY(-100%)";
 }

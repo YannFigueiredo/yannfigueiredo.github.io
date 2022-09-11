@@ -4,29 +4,39 @@
 
 .projects-cards{
     display: flex;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-card{
     width: 400px;
-    border: 6px solid rgb(118, 29, 122); 
-    background: white;
+    border: 1px solid white; 
+    background: #3e4251;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
+    height: 500px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.project-text{
-    padding: 10px;
+.project-thumb{
+    height: 210px;
+}
+
+.project-thumb img{
+    height: 100%;
 }
 
 .project-title{
     display: inline-block;
-    margin-bottom: 10px;
+    background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
+    width: 100%;
 }
 
 .project-title, .project-description{
-    color: black;
+    color: white;
+    padding: 10px;
 }
 
 .project-links{
@@ -34,6 +44,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
+}
+
+.project-links svg{
+    fill: rgba(255, 255, 255, .5);
+    transition: all linear .3s;
 }
 
 .project-links-infos{
@@ -46,7 +62,7 @@
 }
 
 .project-links-infos:hover svg{
-    fill: rgb(118, 29, 122); 
+    fill: rgba(255, 255, 255, 1);
 }
 
 .project-links-app a{
@@ -60,7 +76,15 @@
 }
 
 .project-links-app a:hover svg{
-    fill: rgb(118, 29, 122); 
+    fill: rgba(255, 255, 255, 1);
+}
+
+.project-primary-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    height: 100%;
 }
 
 .project-secondary-screen{
