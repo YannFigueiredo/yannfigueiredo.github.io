@@ -11,7 +11,7 @@
 .project-card{
     width: 400px;
     border: 1px solid white; 
-    background: #3e4251;
+    background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -30,7 +30,6 @@
 
 .project-title{
     display: inline-block;
-    background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
     width: 100%;
 }
 
@@ -44,7 +43,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
 }
 
 .project-links svg{
@@ -117,5 +115,11 @@
 
 .project-secondary-screen .btn-close:hover{
     fill: rgba(255, 255, 255, 1); 
+}
+
+@media screen and (max-width: 480px) {
+    .project-card{
+        width: auto;
+    }
 }
 

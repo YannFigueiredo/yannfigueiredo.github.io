@@ -16,3 +16,17 @@
     text-indent: 20px;
     text-align: justify;
 }
+
+@media screen and (max-width: 768px) {
+    #about{
+        flex-direction: column;
+    }
+
+    .about-img{
+        width: auto;
+    }
+    
+    .about-text{  
+        width: auto;
+    }
+}
