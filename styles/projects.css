@@ -98,6 +98,7 @@
     transition: all linear .3s;
     overflow: hidden;
     transform: translateY(-100%);
+    color: white;
 }
 
 .project-secondary-screen .btn-close{
