@@ -20,8 +20,16 @@ const GlobalStyles = createGlobalStyle `
         font-weight: 700;
     }
 
+    h1 {
+        font-size: 2.95rem;
+    }
+
     h2 {
         font-size: 2rem;
+    }
+
+    img {
+        max-width: 100%;
     }
 `
 

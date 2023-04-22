@@ -13,8 +13,6 @@ export const Container = styled.section`
     background-size: contain;
 
     h1 {
-        font-weight: 700;
-        font-size: 2.95em;
         text-transform: uppercase;
     }
 
@@ -25,23 +23,18 @@ export const Container = styled.section`
 
     @media screen and (max-width: 768px) {
         h1 {
-            font-weight: 700;
             font-size: 2.5em;
-            text-transform: uppercase;
             text-align: center;
         }
         
         span {
-            font-weight: 700;
             font-size: 1em;
             text-align: center;
         }
     }
 
     @media screen and (max-width: 992px) {
-        #intro{
-            background-size: cover;
-        }
+        background-size: cover;
     }
 `
 
