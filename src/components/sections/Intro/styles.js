@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bgIntro from "../../../asserts/images/bg-intro.png"
+import bgIntro from "../../../assets/images/bg-intro.png"
 
 export const Container = styled.section`
     display: flex;

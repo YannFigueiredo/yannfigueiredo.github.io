@@ -1,5 +1,5 @@
 import { Container, ImageWrapper, TextWrapper } from "./styles";
-import aboutImage from "../../../asserts/images/photo.png"
+import aboutImage from "../../../assets/images/photo.png"
 
 export default function About() {
     return(

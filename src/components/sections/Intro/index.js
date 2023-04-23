@@ -1,8 +1,8 @@
 import { Container, LinksWrapper } from "./styles"
-import LinkedinIcon from "../../../asserts/icons/LinkedIn"
-import GithubIcon from "../../../asserts/icons/Github"
-import PdfIcon from "../../../asserts/icons/Pdf" 
-import EmailIcon from "../../../asserts/icons/Email"
+import LinkedinIcon from "../../../assets/icons/LinkedIn"
+import GithubIcon from "../../../assets/icons/Github"
+import PdfIcon from "../../../assets/icons/Pdf" 
+import EmailIcon from "../../../assets/icons/Email"
 
 export default function Intro() {
     return(
