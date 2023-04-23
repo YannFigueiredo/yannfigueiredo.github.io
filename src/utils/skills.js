@@ -58,6 +58,51 @@ export const listSkills = [
             {
                 name: "Styled Components",
                 url: "https://github.com/tandpfun/skill-icons/raw/main/icons/StyledComponents.svg"
+            },
+            {
+                name: "SASS",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Sass.svg"
+            },
+            {
+                name: "Axios",
+                url: "assets/icons/axios.png"
+            },
+            {
+                name: "JUnit",
+                url: "assets/icons/junit.png"
+            },
+            {
+                name: "Jest",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Jest.svg"
+            },
+            {
+                name: "Testing Library",
+                url: "assets/icons/react-testing-library.png"
+            }
+        ]
+    },
+    {
+        listName: "Outros",
+        list: [
+            {
+                name: "Git",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg"
+            },
+            {
+                name: "Docker",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Docker.svg"
+            },
+            {
+                name: "Netlify",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Netlify-Dark.svg"
+            },
+            {
+                name: "Heroku",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Heroku.svg"
+            },
+            {
+                name: "Postman",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Postman.svg"
             }
         ]
     }
