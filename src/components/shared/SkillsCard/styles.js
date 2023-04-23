@@ -20,14 +20,13 @@ export const Content = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0.625rem;
+    gap: 0.5rem;
 
     .skill {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0.625rem;
-        gap: 0.5rem;
         width: 4.0625rem;
 
         img {
