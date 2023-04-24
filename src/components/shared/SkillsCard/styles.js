@@ -9,9 +9,9 @@ export const Container = styled.div`
 `
 
 export const Header = styled.div`
-    margin-bottom: 0.625rem;
+    margin-bottom: ${({theme}) => theme.spacing.margin.very_small};
     background: linear-gradient(90deg, ${({ theme }) => theme.colors.primary}, ${({ theme }) => theme.colors.secondary});
-    padding: 0.625rem;
+    padding: ${({theme}) => theme.spacing.padding.very_small};
 `
 
 export const Content = styled.div`
@@ -19,8 +19,8 @@ export const Content = styled.div`
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0.625rem;
-    gap: 0.5rem;
+    padding: ${({theme}) => theme.spacing.padding.very_small};
+    gap: ${({theme}) => theme.spacing.between_elements.small};
 
     .skill {
         display: flex;
@@ -36,11 +36,16 @@ export const Content = styled.div`
         span {
             display: none;
         }
+    }
 
-        @media screen and (max-width: 480px) {
+    @media screen and (max-width: 500px) {
+        .skill {
+            justify-content: center;
+            text-align: center;
+
             span {
                 display: inline-block;
-                font-size: 0.75rem;
+                font-size: ${({theme}) => theme.fontSize.small};
             }
         }
     }

@@ -6,7 +6,7 @@ export const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 470px;
+    height: 29.375rem;
     background-image: url(${bgIntro});
     background-position: center;
     background-repeat: no-repeat;
@@ -18,17 +18,17 @@ export const Container = styled.section`
 
     span {
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: ${({theme}) => theme.fontSize.large};
     }
 
     @media screen and (max-width: 768px) {
         h1 {
-            font-size: 2.5em;
+            font-size: ${({theme}) => theme.fontSize.very_large};
             text-align: center;
         }
         
         span {
-            font-size: 1em;
+            font-size: ${({theme}) => theme.fontSize.base};
             text-align: center;
         }
     }
@@ -42,14 +42,14 @@ export const LinksWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    gap: 15px;
+    margin-top: ${({theme}) => theme.spacing.margin.normal};
+    gap: ${({theme}) => theme.spacing.between_elements.normal};
 
     a {
-        width: 65px;
-        height: 65px;
-        padding: 12px;
-        border: 2px solid white;
+        width: 4.0625rem;
+        height: 4.0625rem;
+        padding: ${({theme}) => theme.spacing.padding.small};
+        border: 0.125rem solid white;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -63,7 +63,7 @@ export const LinksWrapper = styled.div`
     }
 
     .link-linkedin:hover{
-        background: white;
+        background: rgb(255, 255, 255);
     }
 
     .link-linkedin:hover svg{
@@ -71,23 +71,23 @@ export const LinksWrapper = styled.div`
     }
 
     .link-github:hover{
-        background: white;
+        background: rgb(255, 255, 255);
     }
 
     .link-github:hover svg{
-        fill: black;
+        fill: rgb(0, 0, 0);
     }
 
     .link-resume:hover{
-        background: white;
+        background: rgb(255, 255, 255);
     }
 
     .link-resume:hover svg{
-        fill: red;
+        fill: rgb(214, 16, 0);
     }
 
     .link-email:hover{
-        background: white;
+        background: rgb(255, 255, 255);
     }
 
     .link-email:hover svg{
@@ -96,9 +96,8 @@ export const LinksWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
         a {
-            width: 55px;
-            height: 55px;
-            padding: 12px;
+            width: 3.4375rem;
+            height: 3.4375rem;
         }
     }
 `

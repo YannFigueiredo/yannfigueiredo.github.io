@@ -21,12 +21,12 @@ export const MainScreen = styled.div`
 `
 
 export const Thumb = styled.div`
-    height: 21rem;
+    height: 25rem;
     overflow: hidden;
 `
 
 export const Content = styled.div`
-    padding: 0.625rem;
+    padding: ${({theme}) => theme.spacing.padding.very_small};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,7 +36,7 @@ export const Content = styled.div`
 export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: ${({theme}) => theme.spacing.between_title_content.small};
 `
 
 export const ButtonsWrapper = styled.div`
@@ -51,13 +51,13 @@ export const ButtonsWrapper = styled.div`
 
     .links-app {
         display: flex;
-        gap: 0.5rem;
+        gap: ${({theme}) => theme.spacing.between_elements.small};
     }
 
     .links-app a, .link-info {
         display: flex;
         align-items: center;
-        width: 30px;
+        width: 1.875rem;
         cursor: pointer;
     }
 
@@ -75,7 +75,7 @@ export const SecondaryScreen = styled.div`
     right: 0;
     width: 100%;
     height: 100%;
-    padding: 1.5625rem;
+    padding: ${({theme}) => theme.spacing.padding.large};
     transition: all linear .3s;
     overflow: hidden;
     transform: translateY(-100%);
@@ -90,8 +90,8 @@ export const SecondaryScreen = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        margin-top: 0.625rem;
-        margin-right: 0.625rem;
+        margin-top: ${({theme}) => theme.spacing.margin.very_small};
+        margin-right: ${({theme}) => theme.spacing.margin.very_small};
     }
 
     .btn-close:hover{

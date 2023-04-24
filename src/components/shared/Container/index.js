@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    padding: 3rem 1.25rem;
+    padding: ${({theme}) => theme.spacing.padding.very_large} ${({theme}) => theme.spacing.padding.normal};
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 3.125rem;
 `

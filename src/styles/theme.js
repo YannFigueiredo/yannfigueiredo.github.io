@@ -1,9 +1,13 @@
 import {
-    colors
+    colors,
+    fontSize,
+    spacing
 } from "./tokens"
 
 const theme = {
-    colors
+    colors,
+    fontSize,
+    spacing
 }
 
 export default theme;
