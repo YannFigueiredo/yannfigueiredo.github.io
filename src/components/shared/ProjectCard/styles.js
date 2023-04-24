@@ -8,8 +8,6 @@ export const Container = styled.article`
     border-radius: 0.5rem;
     overflow: hidden;
     position: relative;
-    margin-right: 0.625rem;
-    margin-bottom: 0.625rem;
 
     @media screen and (max-width: 480px) {
         width: auto;
@@ -19,17 +17,20 @@ export const Container = styled.article`
 export const MainScreen = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
     height: 100%;
 `
 
 export const Thumb = styled.div`
-    height: 13.125rem;
+    height: 21rem;
+    overflow: hidden;
 `
 
 export const Content = styled.div`
     padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 `
 
 export const TextWrapper = styled.div`
@@ -48,13 +49,20 @@ export const ButtonsWrapper = styled.div`
         transition: all linear .3s;
     }
 
-    div:hover svg {
-        fill: rgba(255, 255, 255, 1);
-    }
-
     .links-app {
         display: flex;
         gap: 0.5rem;
+    }
+
+    .links-app a, .link-info {
+        display: flex;
+        align-items: center;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .links-app a:hover svg, .link-info:hover svg {
+        fill: rgba(255, 255, 255, 1);
     }
 `
 

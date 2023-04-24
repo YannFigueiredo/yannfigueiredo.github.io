@@ -65,11 +65,11 @@ export const listSkills = [
             },
             {
                 name: "Axios",
-                url: "assets/icons/axios.png"
+                url: "https://github.com/YannFigueiredo/assets/blob/main/yannfigueiredo.github.io/icons/axios.png?raw=true"
             },
             {
                 name: "JUnit",
-                url: "assets/icons/junit.png"
+                url: "https://github.com/YannFigueiredo/assets/blob/main/yannfigueiredo.github.io/icons/junit.png?raw=true"
             },
             {
                 name: "Jest",
@@ -77,7 +77,7 @@ export const listSkills = [
             },
             {
                 name: "Testing Library",
-                url: "assets/icons/react-testing-library.png"
+                url: "https://github.com/YannFigueiredo/assets/blob/main/yannfigueiredo.github.io/icons/react-testing-library.png?raw=true"
             }
         ]
     },

@@ -1,8 +1,9 @@
+import { useRef } from "react"
 import { Container, MainScreen, Thumb, Content, TextWrapper, ButtonsWrapper, SecondaryScreen } from "./styles";
-import CloseButtonIcon from "../../asserts/icons/CloseButton";
-import InfoIcon from "../../asserts/icons/Info";
-import GithubIcon from "../../asserts/icons/Github";
-import LinkIcon from "../../asserts/icons/Link";
+import CloseButtonIcon from "assets/icons/CloseButton";
+import InfoIcon from "assets/icons/Info";
+import GithubIcon from "assets/icons/Github";
+import LinkIcon from "assets/icons/Link";
 
 export default function ProjectCard({
     title, 
@@ -12,6 +13,16 @@ export default function ProjectCard({
     githubUrl,
     projectUrl
 }) {
+    const projectInfos = useRef(null)
+
+    function openProjectInfos() {
+        projectInfos.current.style.transform = "translateY(0%)";
+    }
+    
+    function closeProjectInfos() {
+        projectInfos.current.style.transform = "translateY(-100%)";
+    } 
+
     return (
         <Container>
             <MainScreen>
@@ -25,7 +36,7 @@ export default function ProjectCard({
                     </TextWrapper>
                     <ButtonsWrapper>
                         <div className="link-info">
-                            <InfoIcon />
+                            <InfoIcon onClick={() => {openProjectInfos()}} />
                         </div>
                         <div className="links-app">
                             <a href={githubUrl}>
@@ -38,8 +49,8 @@ export default function ProjectCard({
                     </ButtonsWrapper>
                 </Content>
             </MainScreen>
-            <SecondaryScreen>
-                <CloseButtonIcon className="btn-close" />
+            <SecondaryScreen ref={projectInfos}>
+                <CloseButtonIcon className="btn-close" onClick={() => {closeProjectInfos()}} />
                 <ul>
                     {highlights.map(highlight =>
                         <li>{highlight}</li>

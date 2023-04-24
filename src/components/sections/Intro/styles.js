@@ -59,7 +59,6 @@ export const LinksWrapper = styled.div`
 
     svg{
         fill: white;
-        margin: auto;
         transition: all linear .5s;
     }
 
