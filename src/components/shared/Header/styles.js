@@ -4,37 +4,36 @@ export const Container = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
+    padding: ${({theme}) => theme.spacing.padding.small};
+    background: linear-gradient(90deg, ${({theme}) => theme.colors.primary}, ${({theme}) => theme.colors.secondary});
 
     .scroll{
-        cursor: pointer;
         position: fixed;
         top: 0;
         right: 0;
         z-index: 999;
-        padding: 8px 15px;
-        background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
+        padding: ${({theme}) => theme.spacing.padding.very_small} ${({theme}) => theme.spacing.padding.small};
+        background: linear-gradient(90deg, ${({theme}) => theme.colors.primary}, ${({theme}) => theme.colors.secondary});
     }
 
     nav ul{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: ${({theme}) => theme.spacing.between_elements.large}
     }
 
     nav ul a{
         color: rgba(255, 255, 255, 0.8);
         text-decoration: none;
-        border-bottom: 2px solid transparent;
-        border-radius: 5px;
+        border-bottom: 0.125rem solid transparent;
+        border-radius: 0.3125rem;
         transition: all linear .5s;
     }
 
     nav ul a:hover{
         color: rgba(255, 255, 255, 1);
-        border-bottom: 2px solid white;
+        border-bottom: 0.125rem solid white;
     }
 
     nav ul li{
