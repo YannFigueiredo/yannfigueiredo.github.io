@@ -12,6 +12,22 @@ export default function Header() {
                 menu.current.classList.remove("scroll");
             }
         }
+
+        const links = document.querySelectorAll('a[href^="#"]');
+        for (let i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function (event) {
+                event.preventDefault();
+
+                const href = this.getAttribute("href");
+                const target = document.querySelector(href);
+                const offsetTop = target.offsetTop;
+
+                window.scrollTo({
+                    top: offsetTop - 70,
+                    behavior: "smooth"
+                });
+            });
+        }
     
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);

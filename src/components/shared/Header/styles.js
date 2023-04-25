@@ -10,9 +10,10 @@ export const Container = styled.header`
     .scroll{
         position: fixed;
         top: 0;
+        left: 0;
         right: 0;
         z-index: 999;
-        padding: ${({theme}) => theme.spacing.padding.very_small} ${({theme}) => theme.spacing.padding.small};
+        padding: ${({theme}) => theme.spacing.padding.very_small};
         background: linear-gradient(90deg, ${({theme}) => theme.colors.primary}, ${({theme}) => theme.colors.secondary});
     }
 
