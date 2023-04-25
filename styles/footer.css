@@ -1,9 +1,0 @@
-#main-footer{
-    margin-top: 50px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, rgb(118, 29, 122), rgb(88, 15, 163));
-}
