@@ -4,7 +4,7 @@ import ProjectCard from "components/shared/ProjectCard";
 
 export default function Projects() {
     return(
-        <Container>
+        <Container id="projects">
             <h2>Projetos</h2>
             <ProjectsWrapper>
                 {projectsList.map(project =>(

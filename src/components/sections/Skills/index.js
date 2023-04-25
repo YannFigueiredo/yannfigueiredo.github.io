@@ -4,7 +4,7 @@ import SkillsCard from "components/shared/SkillsCard";
 
 export default function Skills() {
     return(
-        <Container>
+        <Container id="skills">
             <h2>Conhecimento</h2>
             <SkillsWrapper>
                 {listSkills.map(skill => (
