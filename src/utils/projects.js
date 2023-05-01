@@ -1,6 +1,6 @@
 export const projectsList = [
     {
-        title: "Production Guide",
+        title: "Productions Guide",
         description: "Aplicação responsiva, feita em React, que disponibiliza informações sobre diversos tipos de produções como filmes, séries e documentários. Este projeto usa uma API para obter as informações disponibilizadas para o usuário.",
         highlights: [
             "Tecnologias: JavaScript, HTML, CSS, React.js, Jest, React Testing Library, Axios, Context API e Styled-Components.",
@@ -24,7 +24,7 @@ export const projectsList = [
         ],
         thumbUrl: "https://github.com/YannFigueiredo/assets/blob/main/yannfigueiredo.github.io/thumbs/pets-area.png?raw=true",
         githubUrl: "https://github.com/YannFigueiredo/pets-area",
-        projectUrl: "https://petsarea.herokuapp.com/swagger-ui/"
+        projectUrl: "https://pets-area.up.railway.app/swagger-ui/"
     },
     {
         title: "Gamer Preference Survey",

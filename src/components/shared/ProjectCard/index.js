@@ -39,10 +39,10 @@ export default function ProjectCard({
                             <InfoIcon onClick={() => {openProjectInfos()}} />
                         </div>
                         <div className="links-app">
-                            <a href={githubUrl}>
+                            <a href={githubUrl} target="_blank" rel="noreferrer">
                                 <GithubIcon />
                             </a>
-                            <a href={projectUrl}>
+                            <a href={projectUrl} target="_blank" rel="noreferrer">
                                 <LinkIcon />
                             </a>
                         </div>
