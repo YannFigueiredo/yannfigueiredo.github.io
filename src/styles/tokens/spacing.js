@@ -1,4 +1,4 @@
-export default {
+const spacing = {
     between_elements: {
         small: '0.5rem', //8px 
         normal: '0.9375rem', //15px,
@@ -23,3 +23,5 @@ export default {
         very_large: '3rem' //48px
     }
 }
+
+export default spacing;
