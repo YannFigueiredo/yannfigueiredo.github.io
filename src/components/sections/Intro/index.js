@@ -14,6 +14,8 @@ export default function Intro() {
                     title="LinkedIn" 
                     href="https://www.linkedin.com/in/yannfigueiredo/"
                     className="link-linkedin"
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     <LinkedinIcon />
                 </a>
@@ -21,14 +23,18 @@ export default function Intro() {
                     title="Github" 
                     href="https://github.com/YannFigueiredo"
                     className="link-github"
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     <GithubIcon />
                 </a>
                 <a 
                     title="Currículo" 
-                    href="../../../asserts/files/Yann Fabricio Cardoso de Figueiredo - Currículo.pdf"
+                    href="https://drive.google.com/file/d/18lgO870ux53k96egrVUlwMloAb17v5pE/view?usp=sharing"
                     download
                     className="link-resume"
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     <PdfIcon />
                 </a>
@@ -36,6 +42,8 @@ export default function Intro() {
                     title="Email" 
                     href="mailto:yannfabricio@gmail.com"
                     className="link-email"
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     <EmailIcon />
                 </a>
