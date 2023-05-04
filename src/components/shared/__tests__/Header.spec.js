@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import user from "@testing-library/user-event";
 import "@testing-library/jest-dom/extend-expect";
 import { AppProviders } from "providers/AppProviders";
-import Header from "components/shared/Header"
+import Header from "components/shared/Header";
 
 describe("Header", () => {
     it("Header precisa renderizar corretamente", () => {
@@ -14,9 +14,9 @@ describe("Header", () => {
         
         const header = screen.getByTestId("header");
         const menuHeader = screen.getByTestId("menu-header");
-        const aboutBtn = screen.getByTestId("about-menu-header");
-        const skillsBtn = screen.getByTestId("skills-menu-header");
-        const projectsBtn = screen.getByTestId("projects-menu-header");
+        const aboutBtn = screen.getByText("Sobre mim");
+        const skillsBtn = screen.getByText("Conhecimento");
+        const projectsBtn = screen.getByText("Projetos");
         
         expect(header).toBeInTheDocument();
         expect(menuHeader).toBeInTheDocument();
@@ -34,10 +34,9 @@ describe("Header", () => {
 
         const menuHeader = screen.getByTestId("menu-header");
 
-        window.scrollTo(0, 201);
+        window.scrollY = 201;
+        window.dispatchEvent(new Event('scroll'));
 
-        setTimeout(() => {
-            expect(menuHeader).toHaveClass("scroll");
-        }, 500);
+        expect(menuHeader).toHaveClass("scroll");
     });
 });

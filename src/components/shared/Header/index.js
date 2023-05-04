@@ -37,9 +37,9 @@ export default function Header() {
         <Container data-testid="header">
             <nav ref={menu} data-testid="menu-header">
                 <ul>
-                    <a data-testid="about-menu-header" href="#about"><li>Sobre mim</li></a>
-                    <a data-testid="skills-menu-header" href="#skills"><li>Conhecimento</li></a>
-                    <a data-testid="projects-menu-header" href="#projects"><li>Projetos</li></a>
+                    <a href="#about"><li>Sobre mim</li></a>
+                    <a href="#skills"><li>Conhecimento</li></a>
+                    <a href="#projects"><li>Projetos</li></a>
                 </ul>
             </nav>
         </Container>
