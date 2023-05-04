@@ -22,8 +22,8 @@ export default function SkillsCard({ listName, list, large = false }) {
                 <h3>{listName}</h3>
             </Header>
             <Content>
-                {list.map(item =>
-                    <div className="skill">
+                {list.map((item, key) =>
+                    <div className="skill" key={key}>
                         <img src={item.url} alt={item.name} title={item.name}/>
                         <span>{item.name}</span>
                     </div>

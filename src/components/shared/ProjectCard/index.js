@@ -52,8 +52,8 @@ export default function ProjectCard({
             <SecondaryScreen ref={projectInfos}>
                 <CloseButtonIcon className="btn-close" onClick={() => {closeProjectInfos()}} />
                 <ul>
-                    {highlights.map(highlight =>
-                        <li>{highlight}</li>
+                    {highlights.map((highlight, key) =>
+                        <li key={key}>{highlight}</li>
                     )}
                 </ul>
             </SecondaryScreen>

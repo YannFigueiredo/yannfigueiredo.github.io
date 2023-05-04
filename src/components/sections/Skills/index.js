@@ -7,11 +7,12 @@ export default function Skills() {
         <Container id="skills">
             <h2>Conhecimento</h2>
             <SkillsWrapper>
-                {listSkills.map(skill => (
+                {listSkills.map((skill, key) => (
                     <SkillsCard 
                         listName={skill.listName}
                         list={skill.list}
                         large={true}
+                        key={key}
                     />
                 ))}
             </SkillsWrapper>

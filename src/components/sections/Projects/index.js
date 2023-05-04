@@ -7,7 +7,7 @@ export default function Projects() {
         <Container id="projects">
             <h2>Projetos</h2>
             <ProjectsWrapper>
-                {projectsList.map(project =>(
+                {projectsList.map((project, key) =>(
                     <ProjectCard 
                         title={project.title}
                         description={project.description}
@@ -15,6 +15,7 @@ export default function Projects() {
                         thumbUrl={project.thumbUrl}
                         githubUrl={project.githubUrl}
                         projectUrl={project.projectUrl}
+                        key={key}
                     />
                 ))}
             </ProjectsWrapper>
