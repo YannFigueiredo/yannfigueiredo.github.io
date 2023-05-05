@@ -36,13 +36,13 @@ export default function ProjectCard({
                     </TextWrapper>
                     <ButtonsWrapper>
                         <div className="link-info">
-                            <InfoIcon onClick={() => {openProjectInfos()}} data-testid="info-btn" />
+                            <InfoIcon onClick={() => {openProjectInfos()}} data-testid="btn-info" />
                         </div>
                         <div className="links-app">
-                            <a href={githubUrl} target="_blank" rel="noreferrer" data-testid="github-btn">
+                            <a href={githubUrl} target="_blank" rel="noreferrer" data-testid="btn-github">
                                 <GithubIcon />
                             </a>
-                            <a href={projectUrl} target="_blank" rel="noreferrer" data-testid="link-btn">
+                            <a href={projectUrl} target="_blank" rel="noreferrer" data-testid="btn-link">
                                 <LinkIcon />
                             </a>
                         </div>
@@ -50,7 +50,7 @@ export default function ProjectCard({
                 </Content>
             </MainScreen>
             <SecondaryScreen data-testid="project-card-secondary-screen" ref={projectInfos}>
-                <CloseButtonIcon className="btn-close" onClick={() => {closeProjectInfos()}} />
+                <CloseButtonIcon className="btn-close" onClick={() => {closeProjectInfos()}} data-testid="btn-close" />
                 <ul>
                     {highlights.map((highlight, key) =>
                         <li key={key}>{highlight}</li>
