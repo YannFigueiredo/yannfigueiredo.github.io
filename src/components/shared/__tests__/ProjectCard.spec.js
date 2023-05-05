@@ -5,29 +5,27 @@ import ProjectCard from "components/shared/ProjectCard";
 import { projectsList } from "utils/projects";
 import { faker } from "@faker-js/faker";
 
+const title = faker.name.jobTitle();
+const description = faker.lorem.paragraph();
+const url = faker.internet.url();
+const thumb = faker.internet.url();
+
+const renderProjectCard = () => {
+    render(
+        <AppProviders>
+            <ProjectCard
+                title={title}
+                description={description}
+                highlights={projectsList[0].highlights}
+                thumbUrl={url}
+                githubUrl={url}
+                projectUrl={thumb}
+            />
+        </AppProviders>
+    );
+};
+
 describe("ProjectCard", () => {
-    const title = faker.name.jobTitle();
-    const description = faker.lorem.paragraph();
-    const url = faker.internet.url();
-    const thumb = faker.internet.url();
-
-    const windowOpenSpy = jest.spyOn(window, 'open').mockImplementation(() => {});
-
-    const renderProjectCard = () => {
-        render(
-            <AppProviders>
-                <ProjectCard
-                    title={title}
-                    description={description}
-                    highlights={projectsList[0].highlights}
-                    thumbUrl={url}
-                    githubUrl={url}
-                    projectUrl={thumb}
-                />
-            </AppProviders>
-        );
-    };
-
     it("Tela principal precisa renderizar corretamente", () => {
         renderProjectCard();
 
