@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import user from "@testing-library/user-event";
 import "@testing-library/jest-dom/extend-expect";
 import { AppProviders } from "providers/AppProviders";
 import Header from "components/shared/Header";
