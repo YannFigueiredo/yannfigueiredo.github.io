@@ -63,4 +63,16 @@ describe("JobCard", () => {
 
         expect(jobMain).toHaveClass("expand");
     });
+
+    it("O conteúdo principal precisa ter a classe expand removida quando o header for clicado novamente", () => {
+        renderJobCard(false);
+
+        const jobHeader = screen.getByTestId("job-header");
+        const jobMain = screen.getByTestId("job-main");
+
+        fireEvent.click(jobHeader);
+        fireEvent.click(jobHeader);
+
+        expect(jobMain).not.toHaveClass("expand");
+    });
 });
