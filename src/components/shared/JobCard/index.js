@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { Container, Header, Main, ContentWrapper, SkillsCarrousel } from "./styles";
+import { useState, useEffect, useRef } from "react";
+import { Container, Header, Main, ContentWrapper, Skills } from "./styles";
 
 export default function JobCard({
     imageCompanyUrl,
@@ -11,6 +11,7 @@ export default function JobCard({
     actualJob = false,
     skillsUrlList = []
 }) {
+    const [isMobile, setIsMobile] = useState(/Mobi/.test(navigator.userAgent)); 
     const mainContent = useRef(null);
 
     function handleContentArea() {
@@ -23,38 +24,48 @@ export default function JobCard({
 
     return(
         <Container>
-            <Header data-testid="job-header" onClick={handleContentArea}>
+            <Header 
+                data-testid="job-header" 
+                onClick={() => {
+                    if(isMobile) handleContentArea();
+                }} 
+                onMouseOver={() =>{
+                    if(!isMobile) handleContentArea();
+                }} 
+                onMouseOut={() =>{
+                    if(!isMobile) handleContentArea();
+                }} 
+            >
                 <div>
                     <img src={imageCompanyUrl} alt={companyName} />
                 </div>
                 <p>
-                    {initialData} - {actualJob ? "Hoje" : finalData}
+                    {initialData}<br/>-<br/>{actualJob ? "Hoje" : finalData}
                 </p>
             </Header>
             <Main ref={mainContent} data-testid="job-main">
                 <ContentWrapper>
-                    <h3>{companyName}</h3>
-                    <span>{jobName}</span>
+                    <div>
+                        <h3>{companyName}</h3>
+                        <span>{jobName}</span>
+                    </div>
                     <p>
                         {description}
                     </p>
                 </ContentWrapper>
-                <SkillsCarrousel>
+                <Skills>
                     <span>Tecnologias:</span>
                     <div className="skills-wrapper">
-                        <div className="skills">
-                            {skillsUrlList.map((skill, key) =>
-                                <div className="skill" key={key}>
-                                    <img 
-                                        src={skill.url}
-                                        alt={skill.name}
-                                        title={skill.name}
-                                    />
-                                </div>
-                            )}
-                        </div>
+                        {skillsUrlList.map((skill, key) =>
+                            <img 
+                                key={key}
+                                src={skill.url}
+                                alt={skill.name}
+                                title={skill.name}
+                            />
+                        )}
                     </div>
-                </SkillsCarrousel>
+                </Skills>
             </Main>
         </Container>
     );
