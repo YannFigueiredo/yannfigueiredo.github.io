@@ -21,7 +21,7 @@ export const Container = styled.section`
         font-size: ${({theme}) => theme.fontSize.large};
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
         h1 {
             font-size: ${({theme}) => theme.fontSize.very_large};
             text-align: center;
