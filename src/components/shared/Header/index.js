@@ -38,6 +38,7 @@ export default function Header() {
             <nav ref={menu} data-testid="menu-header">
                 <ul>
                     <a href="#about"><li>Sobre mim</li></a>
+                    <a href="#jobs"><li>Experiência</li></a>
                     <a href="#skills"><li>Conhecimento</li></a>
                     <a href="#projects"><li>Projetos</li></a>
                 </ul>
