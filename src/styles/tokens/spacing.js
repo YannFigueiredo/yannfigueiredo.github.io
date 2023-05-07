@@ -1,5 +1,6 @@
 const spacing = {
     between_elements: {
+        very_small: '0.3125rem', //5px
         small: '0.5rem', //8px 
         normal: '0.9375rem', //15px,
         large: '1.25rem' //20px
@@ -13,6 +14,7 @@ const spacing = {
     },
     margin: {
         very_small: '0.625rem', //10px 
+        small: '0.75rem', //12px
         normal: '1.25rem' //20px
     },
     padding: {

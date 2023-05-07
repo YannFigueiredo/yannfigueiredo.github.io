@@ -6,6 +6,7 @@ export const Container = styled.header`
     align-items: center;
     padding: ${({theme}) => theme.spacing.padding.small};
     background: linear-gradient(90deg, ${({theme}) => theme.colors.primary}, ${({theme}) => theme.colors.secondary});
+    z-index: 999;
 
     .scroll{
         position: fixed;
