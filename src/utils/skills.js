@@ -43,12 +43,20 @@ export const listSkills = [
                 url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Django.svg"
             },
             {
-                name: "React",
+                name: "React.js",
                 url: "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg"
             },
             {
                 name: "Spring Boot",
                 url: "https://github.com/tandpfun/skill-icons/raw/main/icons/Spring-Dark.svg"
+            },
+            {
+                name: "Next.js",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/NextJS-Dark.svg"
+            },
+            {
+                name: "Node.js",
+                url: "https://github.com/tandpfun/skill-icons/raw/main/icons/NodeJS-Dark.svg"
             }
         ]
     },
