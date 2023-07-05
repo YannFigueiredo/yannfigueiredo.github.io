@@ -1,5 +1,18 @@
 export const projectsList = [
     {
+        title: "Plataforma Lacrei Saúde",
+        description: "Plataforma inclusiva, ainda não lançada oficialmente, que possiblita a conexão entre profissionais da área de saúde e possíveis pacientes da comunidade LGBTQIA+. Neste projeto participei do desenvolvimento do front-end da área de profissionais da saúde e também de usuários/pacientes.",
+        highlights: [
+            "Tecnologias: JavaScript, TypeScript, HTML, React.js, Next.js, Gatsby.js, Axios, Context API, React Hook Form e Styled-Components.",
+            "A plataforma possui uma API (https://lacrei-api-sandbox.herokuapp.com/docs/swagger/) bem completa, tendo inclusive autenticação.",
+            "O front-end foi componentizado de acordo com o projeto do figma e Style-Guide feitos pela equipe de UX/UI.",
+            "A plataforma possui: formulários, pesquisa, criação e personalização de perfil e integração com webcam."
+        ],
+        thumbUrl: "https://phx02pap004files.storage.live.com/y4mF6UizxFBD7HllEQA8l7oY07wPgJxrzFHtBOLBDQZXPqnAZfs3zMGPvOBfHTVt7ZCyS6gL1LnYr0QkFGfo5ZuS-9tzIRcpGpcrY9_2NRasflqAwbXY9_YGONEJgWjo22Fv5KTtUC_a57FoOIx2ai9hsEKKoK_slGjc0WU6d2u2cvsBxtx9DpyCFAbO0hT7SSuskVK0AZQj1y6xZ3isVQKl-hhh-c7laNR7MMPzjPD6JE?encodeFailures=1&width=1026&height=577",
+        githubUrl: "",
+        projectUrl: "https://frontend-lacrei-institucional.vercel.app/"
+    },
+    {
         title: "Productions Guide",
         description: "Aplicação responsiva, feita em React, que disponibiliza informações sobre diversos tipos de produções como filmes, séries e documentários. Este projeto usa uma API para obter as informações disponibilizadas para o usuário.",
         highlights: [
