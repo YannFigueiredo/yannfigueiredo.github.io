@@ -7,7 +7,7 @@ export default function Header() {
     const menu = useRef(null);
 
     const openMenu = () => {
-        menu.current.style.height = "auto"; 
+        menu.current.style.height = "auto";
         document.querySelector("#btn-open-menu").classList.add("btn-hidden");
         document.querySelector("#btn-close-menu").classList.remove("btn-hidden");
 
@@ -15,7 +15,7 @@ export default function Header() {
     };
 
     const closeMenu = () => {
-        menu.current.style.height = "0"; 
+        menu.current.style.height = "0";
         document.querySelector("#btn-open-menu").classList.remove("btn-hidden");
         document.querySelector("#btn-close-menu").classList.add("btn-hidden");
 
@@ -24,7 +24,7 @@ export default function Header() {
 
     useEffect(() => {
         const handleResize = () => {
-            if(window.innerWidth > 500) {
+            if (window.innerWidth > 500) {
                 openMenu();
                 document.body.style.overflow = "auto";
                 document.querySelector("#btn-close-menu").classList.add("btn-hidden");
@@ -63,15 +63,15 @@ export default function Header() {
                     behavior: "smooth"
                 });
 
-                if(window.innerWidth <= 500)
+                if (window.innerWidth <= 500)
                     closeMenu();
             });
         }
-    
+
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-    
+
     return (
         <Container data-testid="header">
             <MenuIcon id="btn-open-menu" className="btn-hidden" onClick={openMenu} />

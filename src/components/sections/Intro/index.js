@@ -8,7 +8,7 @@ export default function Intro() {
     return(
         <Container id="intro">
             <h1>Yann Fabricio Cardoso de Figueiredo</h1>
-            <span>Desenvolvedor Front-End</span>
+            <span>Desenvolvedor Full Stack</span>
             <LinksWrapper>
                 <a 
                     title="LinkedIn" 
