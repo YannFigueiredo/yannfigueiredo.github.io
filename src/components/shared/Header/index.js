@@ -74,8 +74,18 @@ export default function Header() {
 
     return (
         <Container data-testid="header">
-            <MenuIcon id="btn-open-menu" className="btn-hidden" onClick={openMenu} />
-            <CloseButtonIcon id="btn-close-menu" className="btn-hidden" onClick={closeMenu} />
+            <MenuIcon 
+                id="btn-open-menu" 
+                className="btn-hidden" 
+                onClick={openMenu} 
+                data-testid="btn-open-menu" 
+            />
+            <CloseButtonIcon 
+                id="btn-close-menu" 
+                className="btn-hidden" 
+                onClick={closeMenu} 
+                data-testid="btn-close-menu" 
+            />
             <nav ref={menu} data-testid="menu-header">
                 <ul>
                     <li><a href="#about">Sobre mim</a></li>
