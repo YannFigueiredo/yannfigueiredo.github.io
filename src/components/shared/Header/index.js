@@ -1,8 +1,26 @@
 import { useEffect, useRef } from "react";
 import { Container } from "./styles";
+import MenuIcon from "assets/icons/Menu";
+import CloseButtonIcon from "assets/icons/CloseButton";
 
 export default function Header() {
     const menu = useRef(null);
+
+    const openMenu = () => {
+        menu.current.style.height = "100%"; 
+        document.querySelector("#btn-open-menu").style.display = "none";
+        document.querySelector("#btn-close-menu").style.display = "block";
+
+        document.body.style.overflow = "hidden";
+    };
+
+    const closeMenu = () => {
+        menu.current.style.height = "0"; 
+        document.querySelector("#btn-open-menu").style.display = "block";
+        document.querySelector("#btn-close-menu").style.display = "none";
+
+        document.body.style.overflow = "auto";
+    };
 
     useEffect(() => {
         function handleScroll() {
@@ -35,12 +53,14 @@ export default function Header() {
     
     return (
         <Container data-testid="header">
+            <MenuIcon id="btn-open-menu" onClick={openMenu} />
+            <CloseButtonIcon id="btn-close-menu" onClick={closeMenu} />
             <nav ref={menu} data-testid="menu-header">
                 <ul>
-                    <a href="#about"><li>Sobre mim</li></a>
-                    <a href="#jobs"><li>Experiência</li></a>
-                    <a href="#skills"><li>Conhecimento</li></a>
-                    <a href="#projects"><li>Projetos</li></a>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#jobs">Experiência</a></li>
+                    <li><a href="#skills">Conhecimento</a></li>
+                    <li><a href="#projects">Projetos</a></li>
                 </ul>
             </nav>
         </Container>
