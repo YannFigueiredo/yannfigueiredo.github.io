@@ -31,7 +31,6 @@ export default function Intro() {
                 <a 
                     title="Currículo" 
                     href="https://drive.google.com/file/d/1gRhtzuDDMEDA55_BX8gT3CzgNvxnQ_DH/view?usp=sharing"
-                    download
                     className="link-resume"
                     target="_blank"
                     rel="noreferrer"
