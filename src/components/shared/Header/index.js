@@ -7,23 +7,41 @@ export default function Header() {
     const menu = useRef(null);
 
     const openMenu = () => {
-        menu.current.style.height = "100%"; 
-        document.querySelector("#btn-open-menu").style.display = "none";
-        document.querySelector("#btn-close-menu").style.display = "block";
+        menu.current.style.height = "auto"; 
+        document.querySelector("#btn-open-menu").classList.add("btn-hidden");
+        document.querySelector("#btn-close-menu").classList.remove("btn-hidden");
 
         document.body.style.overflow = "hidden";
     };
 
     const closeMenu = () => {
         menu.current.style.height = "0"; 
-        document.querySelector("#btn-open-menu").style.display = "block";
-        document.querySelector("#btn-close-menu").style.display = "none";
+        document.querySelector("#btn-open-menu").classList.remove("btn-hidden");
+        document.querySelector("#btn-close-menu").classList.add("btn-hidden");
 
         document.body.style.overflow = "auto";
     };
 
     useEffect(() => {
-        function handleScroll() {
+        const handleResize = () => {
+            if(window.innerWidth > 500) {
+                openMenu();
+                document.body.style.overflow = "auto";
+                document.querySelector("#btn-close-menu").classList.add("btn-hidden");
+            } else {
+                closeMenu();
+            }
+        }
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
             if (window.scrollY > 200) {
                 menu.current.classList.add("scroll");
             } else {
@@ -44,6 +62,9 @@ export default function Header() {
                     top: offsetTop - 70,
                     behavior: "smooth"
                 });
+
+                if(window.innerWidth <= 500)
+                    closeMenu();
             });
         }
     
@@ -53,8 +74,8 @@ export default function Header() {
     
     return (
         <Container data-testid="header">
-            <MenuIcon id="btn-open-menu" onClick={openMenu} />
-            <CloseButtonIcon id="btn-close-menu" onClick={closeMenu} />
+            <MenuIcon id="btn-open-menu" className="btn-hidden" onClick={openMenu} />
+            <CloseButtonIcon id="btn-close-menu" className="btn-hidden" onClick={closeMenu} />
             <nav ref={menu} data-testid="menu-header">
                 <ul>
                     <li><a href="#about">Sobre mim</a></li>

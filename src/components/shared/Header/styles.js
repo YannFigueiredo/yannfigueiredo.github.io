@@ -43,8 +43,11 @@ export const Container = styled.header`
     }
 
     #btn-open-menu, #btn-close-menu {
-        display: none;
         cursor: pointer;
+    }
+
+    .btn-hidden {
+        display: none;
     }
 
     @media screen and (max-width: 500px) {
@@ -78,14 +81,12 @@ export const Container = styled.header`
         }
 
         #btn-open-menu {
-            display: block;
             width: 2rem;
             fill: rgba(255, 255, 255, .4);
             z-index: 1000;
         }
 
         #btn-close-menu {
-            display: none;
             color: white;
             position: absolute;
             right: 0;
