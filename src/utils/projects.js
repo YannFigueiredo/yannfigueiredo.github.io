@@ -1,3 +1,5 @@
+import plataformaLacreiSaude from "assets/images/projects-thumbs/plataforma-lacrei-saude.png"
+
 export const projectsList = [
     {
         title: "Plataforma Lacrei Saúde",
@@ -8,7 +10,7 @@ export const projectsList = [
             "O front-end foi componentizado de acordo com o projeto do figma e Style-Guide feitos pela equipe de UX/UI.",
             "A plataforma possui: formulários, pesquisa, criação e personalização de perfil e integração com webcam."
         ],
-        thumbUrl: "https://phx02pap004files.storage.live.com/y4mF6UizxFBD7HllEQA8l7oY07wPgJxrzFHtBOLBDQZXPqnAZfs3zMGPvOBfHTVt7ZCyS6gL1LnYr0QkFGfo5ZuS-9tzIRcpGpcrY9_2NRasflqAwbXY9_YGONEJgWjo22Fv5KTtUC_a57FoOIx2ai9hsEKKoK_slGjc0WU6d2u2cvsBxtx9DpyCFAbO0hT7SSuskVK0AZQj1y6xZ3isVQKl-hhh-c7laNR7MMPzjPD6JE?encodeFailures=1&width=1026&height=577",
+        thumbUrl: plataformaLacreiSaude,
         githubUrl: "",
         projectUrl: "https://frontend-lacrei-institucional.vercel.app/"
     },

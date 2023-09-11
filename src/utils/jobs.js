@@ -1,4 +1,4 @@
-import lacreiSaudeLogo from "assets/images/company_lacrei_saude.jpg";
+import lacreiSaudeLogo from "assets/images/companies-logos/company_lacrei_saude.jpg";
 
 export const jobsList = [
     {
