@@ -1,6 +1,19 @@
 import plataformaLacreiSaude from "assets/images/projects-thumbs/plataforma-lacrei-saude.png"
+import distribuidoraSpider from "assets/images/projects-thumbs/distribuidora-spider.png";
 
 export const projectsList = [
+    {
+      title: "Distribuidora Spider",
+      description: "API com um CRUD para gerenciar vendas e compras de produtos em uma distribuidora fictícia.",
+      highlights: [
+          "Tecnologias: Node.js, JavaScript, Jest, Express, Yup, Sequelize e MySQL.",
+          "A API possui um CRUD completo.",
+          "O banco de dados possui vários tipos de relações, inclusive 'muitos para muitos'.",
+      ],
+      thumbUrl: distribuidoraSpider,
+      githubUrl: "https://github.com/YannFigueiredo/distribuidora-spider",
+      projectUrl: "https://distribuidora-spider-api.onrender.com/api-docs/"
+    },
     {
         title: "Plataforma Lacrei Saúde",
         description: "Plataforma inclusiva, ainda não lançada oficialmente, que possiblita a conexão entre profissionais da área de saúde e possíveis pacientes da comunidade LGBTQIA+. Neste projeto participei do desenvolvimento do front-end da área de profissionais da saúde e também de usuários/pacientes.",
@@ -26,20 +39,6 @@ export const projectsList = [
         thumbUrl: "https://github.com/YannFigueiredo/assets/blob/main/yannfigueiredo.github.io/thumbs/productions-guide.png?raw=true",
         githubUrl: "https://github.com/YannFigueiredo/productions-guide",
         projectUrl: "https://productionsguide.netlify.app/"
-    },
-    {
-        title: "Pets Area",
-        description: "API com um CRUD para registros de animais de estimação dos usuários. A API contém diversos filtros e opções de ordenação para tratar os registros vindos do banco de dados PostgreSQL.",
-        highlights: [
-            "Tecnologias: Java, Spring Boot, Swagger, JPA e PostgreSQL.",
-            "A API possui um CRUD completo, tanto para owners/usuários quanto para os pets.",
-            "A API possibilita filtrar os pets por intervalo de idade, gênero e tipo.",
-            "A API possibilita filtrar pets por meio de busca por palavras chave, onde os campos analisados são o nome e a descrição.",
-            "Autenticação e o projeto front-end estão em desenvolvimento."
-        ],
-        thumbUrl: "https://github.com/YannFigueiredo/assets/blob/main/yannfigueiredo.github.io/thumbs/pets-area.png?raw=true",
-        githubUrl: "https://github.com/YannFigueiredo/pets-area",
-        projectUrl: "https://pets-area.up.railway.app/swagger-ui/"
     },
     {
         title: "Gamer Preference Survey",
