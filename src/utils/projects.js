@@ -1,7 +1,18 @@
 import plataformaLacreiSaude from "assets/images/projects-thumbs/plataforma-lacrei-saude.png"
 import distribuidoraSpider from "assets/images/projects-thumbs/distribuidora-spider.png";
+import portfolio from "assets/images/projects-thumbs/portfolio.png";
 
 export const projectsList = [
+    {
+      title: "Meu portfólio",
+      description: "Este site, que é meu portfólio pessoal com informações como projetos feitos, experiência e tecnologias que domino.",
+      highlights: [
+          "Tecnologias: JavaScript, HTML, CSS e Styled-Components.",
+      ],
+      thumbUrl: portfolio,
+      githubUrl: "https://github.com/YannFigueiredo/yannfigueiredo.github.io",
+      projectUrl: "https://yannfigueiredo.github.io/"
+    },
     {
       title: "Distribuidora Spider",
       description: "API com um CRUD para gerenciar vendas e compras de produtos em uma distribuidora fictícia.",
@@ -16,7 +27,7 @@ export const projectsList = [
     },
     {
         title: "Plataforma Lacrei Saúde",
-        description: "Plataforma inclusiva, ainda não lançada oficialmente, que possiblita a conexão entre profissionais da área de saúde e possíveis pacientes da comunidade LGBTQIA+. Neste projeto participei do desenvolvimento do front-end da área de profissionais da saúde e também de usuários/pacientes.",
+        description: "Plataforma inclusiva que possiblita a conexão entre profissionais da área de saúde e possíveis pacientes da comunidade LGBTQIA+. Neste projeto participei do desenvolvimento do front-end da área de profissionais da saúde e também de usuários/pacientes.",
         highlights: [
             "Tecnologias: JavaScript, TypeScript, HTML, React.js, Next.js, Gatsby.js, Axios, Context API, React Hook Form e Styled-Components.",
             "A plataforma possui uma API (https://lacrei-api-sandbox.herokuapp.com/docs/swagger/) bem completa, tendo inclusive autenticação.",
@@ -25,7 +36,7 @@ export const projectsList = [
         ],
         thumbUrl: plataformaLacreiSaude,
         githubUrl: "",
-        projectUrl: "https://frontend-lacrei-institucional.vercel.app/"
+        projectUrl: "https://lacreisaude.com.br/"
     },
     {
         title: "Productions Guide",
@@ -44,7 +55,7 @@ export const projectsList = [
         title: "Gamer Preference Survey",
         description: "Aplicativo Web que lista os jogos mais populares de acordo com os votos dos usuários, podendo ser filtrados pela data do registro. Os votos são registrados e lidos a partir de uma API, e até mesmo gráficos são gerados a partir desses registros.",
         highlights: [
-            "Tecnologias: Java, Spring Boot, JPA, Apex Charts, PostgreSQL, HTML, CSS, TypeScript, React, Styled components, Axios e Context API.",
+            "Tecnologias: JavaScript, Node.js, Express.js, Apex Charts, MySQL, HTML, CSS, TypeScript, React.js, Styled components, Axios e Context API.",
             "A API permite que sejam cadastrados novos votos, com uma interface dedicada, e ainda lista os votos em formato de tabela.",
             "A aplicação disponibiliza estísticas gráficas, usando a biblioteca Apex Charts, dos votos obtidos."
         ],
