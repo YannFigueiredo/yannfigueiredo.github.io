@@ -11,6 +11,7 @@ export const SkillsWrapper = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: ${({theme}) => theme.spacing.between_elements.small};
+    animation: fadeIn 1.5s;
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(3, 1fr);

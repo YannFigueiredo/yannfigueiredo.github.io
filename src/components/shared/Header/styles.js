@@ -22,7 +22,8 @@ export const Container = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: ${({theme}) => theme.spacing.between_elements.large}
+        gap: ${({theme}) => theme.spacing.between_elements.large};
+        animation: fadeIn 1.5s;
     }
 
     nav ul a{

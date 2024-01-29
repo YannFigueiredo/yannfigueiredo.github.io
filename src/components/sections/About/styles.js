@@ -12,13 +12,14 @@ export const Container = styled.section`
 `
 
 export const ImageWrapper = styled.div`
-    
+  animation: fadeIn 1.5s;
 `
 
 export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: ${({theme}) => theme.spacing.between_title_content.normal};
+    animation: fadeIn 1.5s;
 
     p {
         text-indent: ${({theme}) => theme.spacing.indent.normal};

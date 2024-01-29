@@ -8,4 +8,5 @@ export const Container = styled.section`
 
 export const JobsWrapper = styled.div`
     overflow-x: auto;
+    animation: fadeIn 1.5s;
 `

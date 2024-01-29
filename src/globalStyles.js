@@ -8,6 +8,42 @@ const GlobalStyles = createGlobalStyle `
         font-family: 'Saira', sans-serif;
     }
 
+    @keyframes moveFromBottom {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes moveFromLeft {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes moveFromRight {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 100%;
+      }
+    }
+
     body {
         max-width: 100%;
         scroll-behavior: smooth;

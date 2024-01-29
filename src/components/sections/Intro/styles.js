@@ -11,14 +11,17 @@ export const Container = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    animation: fadeIn 1.5s;
 
     h1 {
         text-transform: uppercase;
+        animation: moveFromLeft 1.6s;
     }
 
     span {
         font-weight: 700;
         font-size: ${({theme}) => theme.fontSize.large};
+        animation: moveFromRight 1.6s;
     }
 
     @media screen and (max-width: 992px) {
@@ -55,6 +58,7 @@ export const LinksWrapper = styled.div`
         justify-content: center;
         align-items: center;
         transition: all linear .4s;
+        animation: moveFromBottom 1.6s;
     }
 
     svg{
