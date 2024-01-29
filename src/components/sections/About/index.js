@@ -13,28 +13,29 @@ export default function About() {
             <TextWrapper>
                 <h2>Sobre mim</h2>
                 <p>
-                    Olá, me chamo Yann Figueiredo, sou paraense e sou formado como Bacharel em Ciência 
-                    da Computação. Sou uma pessoa muito determinada, organizada e que sempre busca aprender 
-                    mais. Atualmente me dedico a melhorar minhas habilidades como desenvolvedor 
-                    back-end, depois de ter me dedicado por mais de uma ano para aprimorar meu conhecimento em front-end.
+                    Olá, me chamo Yann Figueiredo. Sou formado em ciência da computação e tenho como foco o 
+                    desenvolvimento front-end. Sou uma pessoa muito determinada, organizada e que sempre 
+                    busca aprender mais. Durante a universidade, adquiri conhecimentos técnicos em 
+                    refatoração, banco de dados, diagrama UML, metodologias ágeis, código limpo, estrutura 
+                    de dados, documentação de software, testes e inteligência artificial.
+                </p>
+                <p>
+                    Possuo experiência prática em um projeto real de voluntariado na ONG Lacrei Saúde, onde 
+                    participei do desenvolvimento de uma plataforma inclusiva para conectar profissionais da 
+                    saúde com pacientes da comunidade LGBTQIA+. Nesse projeto, pude aplicar na prática o 
+                    desenvolvimento ágil com SCRUM e aprender e aprimorar tecnologias como Next.js, JavaScript, 
+                    TypeScript, consumo de API com Axios, versionamento de código com git, React Hook Form e 
+                    construção de componentes responsivos e fiéis a modelos do figma. É um projeto 
+                    muito importante onde desenvolvi muito minhas habilidades técnicas, comunicação, trabalho 
+                    em equipe e otimização de tempo de codificação.
                 </p>
                 <p>
                     Fazendo projetos pessoais foquei em utilizar o framework React para desenvolver projetos 
                     cada vez mais otimizados e completos, como o meu mais recente, Productions Guide, onde 
                     trabalhei diversas competências como consumo de API com axios, testes com jest, estilização 
-                    e componentização com styled componemts, e gerenciamento de estados com context api. Atualmente estou praticando back-end com Node.js em novos projetos pessoais.
-                </p>
-                <p>
-                    Recentemente trabalhei de forma voluntária para a ONG Lacrei Saúde, onde contribuí no 
-                    desenvolvimento do front-end de uma plataforma inclusiva que vai possibilitar a conexão com 
-                    profissionais da área da saúde para eventuais pacientes da comunidade LGBTQIA+. É um projeto 
-                    muito importante onde desenvolvi muito minhas habilidades técnicas, comunição, trabalho 
-                    em equipe e otimização de tempo de codificação. Trabalhamos com metodologia ágil SCRUM, o que 
-                    deixou todo o processo de desenvolvimento do produto muito mais fluído. Na Lacrei Saúde, trabalhando 
-                    em equipe, codificamos telas e componentes reutilizáveis e responsivos a partir de modelos 
-                    disponibilizados no figma pela equipe de UI/UX. As tecnologias usadas durante o desenvolvimento do 
-                    projeto foram: React.js, Next.js, Gatsby, TypeScript, JavaScript, HTML, Styled-Components, Axios, React Hook Form e versionamento 
-                    com Git.
+                    e componentização com styled components, e gerenciamento de estados com context api. 
+                    Atualmente, além de me aprimorar no front-end, estou praticando back-end com Node.js/Express.js 
+                    em novos projetos pessoais.
                 </p>
             </TextWrapper>
         </Container>
