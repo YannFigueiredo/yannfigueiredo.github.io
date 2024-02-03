@@ -8,7 +8,7 @@ export default function Intro() {
     return(
         <Container id="intro">
             <h1>Yann Fabricio Cardoso de Figueiredo</h1>
-            <span>Desenvolvedor Full Stack</span>
+            <span>Desenvolvedor Front-End</span>
             <LinksWrapper>
                 <a 
                     title="LinkedIn" 
@@ -30,7 +30,7 @@ export default function Intro() {
                 </a>
                 <a 
                     title="Currículo" 
-                    href="https://drive.google.com/file/d/1J_qm8X6IzKHsqHcpSO3hjov5I0EWLnDT/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1ssSNrqAPMDwV6P9f_RlFl-a3x8atto69/view?usp=sharing"
                     className="link-resume"
                     target="_blank"
                     rel="noreferrer"
