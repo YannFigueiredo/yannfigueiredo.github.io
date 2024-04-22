@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.e33e9aee.js",
+    "main.js": "/static/js/main.c47b6233.js",
     "static/media/photo.png": "/static/media/photo.87477d482c93576e2a0a.png",
     "static/media/bg-intro.png": "/static/media/bg-intro.a3dd830cb411fd9235e3.png",
     "static/media/portfolio.png": "/static/media/portfolio.d95114c3b97677300444.png",
     "static/media/plataforma-lacrei-saude.png": "/static/media/plataforma-lacrei-saude.35334442ad351637e601.png",
     "static/media/distribuidora-spider.png": "/static/media/distribuidora-spider.cb467796190f8ef81739.png",
     "index.html": "/index.html",
-    "main.e33e9aee.js.map": "/static/js/main.e33e9aee.js.map"
+    "main.c47b6233.js.map": "/static/js/main.c47b6233.js.map"
   },
   "entrypoints": [
-    "static/js/main.e33e9aee.js"
+    "static/js/main.c47b6233.js"
   ]
 }
