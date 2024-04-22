@@ -30,7 +30,7 @@ export default function Intro() {
                 </a>
                 <a 
                     title="Currículo" 
-                    href="https://drive.google.com/file/d/1pFLEeuFbDcfH8WeR8ivlWuZFntmA4NCn/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1OSqIRAjvrIQ2MHShnOtvJgVnHA8DOfl2/view?usp=sharing"
                     className="link-resume"
                     target="_blank"
                     rel="noreferrer"
